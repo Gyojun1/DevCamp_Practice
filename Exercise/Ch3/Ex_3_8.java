@@ -15,13 +15,13 @@ public class Ex_3_8 {
         float f2 = 0.1f;
         double d =0.1;
 
-//        boolean result = d==f2;
+        boolean result = d==f2;
 
         System.out.println("c="+c);
         System.out.println("ch="+ch);
         System.out.println("f="+f);
         System.out.println("l="+l);
-//        System.out.println("result="+result);
+        System.out.println("result="+result);
 
 
 
