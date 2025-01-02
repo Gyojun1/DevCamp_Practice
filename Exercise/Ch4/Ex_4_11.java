@@ -16,7 +16,6 @@ public class Ex_4_11 {
         System.out.println(num1+","+num2);
 
         for(int i=0; i<8; i++){
-            int num4 = 0;
 
 
 
