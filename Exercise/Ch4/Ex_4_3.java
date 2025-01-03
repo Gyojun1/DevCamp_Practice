@@ -16,9 +16,10 @@ public class Ex_4_3 {
         for(int i=1; i<11; i++){
             for (int j=0; j<i; j++){
                 sum+=arr[j];
-//                System.out.print(arr[j]+" ");
+                System.out.print(arr[j]+" ");
             }
         }
+        System.out.println();
         System.out.println(sum);
 
     }
