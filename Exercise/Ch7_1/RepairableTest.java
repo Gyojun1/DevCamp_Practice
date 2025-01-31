@@ -3,6 +3,14 @@ package me.Gyojun.practice.Exercise.Ch7_1;
 
 interface Repairable{}
 
+class Unit {
+    int hitPoint;
+    final int MAX_HP;
+    Unit (int hp){
+        MAX_HP = hp;
+    }
+}
+
 class GroundUnit extends Unit {
     GroundUnit(int hp){
         super(hp);
@@ -15,13 +23,7 @@ class AirUnit extends Unit {
     }
 }
 
-class Unit {
-    int hitPoint;
-    final int MAX_HP;
-    Unit (int hp){
-        MAX_HP = hp;
-    }
-}
+
 
 class Tank extends GroundUnit implements Repairable {
     Tank(){
