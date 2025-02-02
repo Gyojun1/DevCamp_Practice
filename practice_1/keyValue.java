@@ -23,11 +23,19 @@ public class keyValue {
         Iterator it = map.entrySet().iterator();
 
         while (it.hasNext()){
-            Map.Entry entry = (Map.Entry)it.next();
+            Map.Entry<String,Integer> entry = (Map.Entry)it.next();
             int value = (int)entry.getValue();
- //           System.out.println(entry.getKey()+" : "+printBar('#',value)+" "+value);
+            System.out.println(entry.getKey()+" : "+printBar('#',value)+" "+value);
 
         }
+    }
+
+    private static String printBar(char c, int value) {
+        StringBuilder bar = new StringBuilder();
+        for (int i = 0; i < value; i++) {
+            bar.append(c); // 문자를 value 번 반복하여 추가
+        }
+        return bar.toString(); // 문자열로 반환
     }
 }
 
